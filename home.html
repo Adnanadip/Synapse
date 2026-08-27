@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse | BME Utility Workspace</title>
+    
+    <!-- Favicon referencing your asset folder -->
+    <link rel="icon" type="image/svg+xml" href="./asset/logo/logo-icon.svg">
+    
+    <!-- Fonts & CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <nav class="top-nav">
+        <div class="brand">
+            <img src="./asset/logo/logo-full.svg" alt="Synapse Logo" class="brand-logo">
+        </div>
+        <div class="nav-controls">
+            <div class="status-indicator">
+                <span class="dot pulse"></span> SYS.ONLINE 0
+            </div>
+        </div>
+    </nav>
+
+    <header class="workspace-header">
+        <h1>Synaptic Cleft</h1>
+        <p>Action Potential Hub</p>
+        <div class="search-container">
+            <input type="text" id="toolSearch" placeholder="Search utilities.exe..." autocomplete="off">
+        </div>
+    </header>
+
+    <main class="grid-container" id="toolGrid">
+        <!-- 1. Data Visualizer -->
+        <a href="#" class="utility-card" data-tags="graph plot chart signal">
+            <div class="card-header">
+                <span class="accent-dot cyan"></span>
+                <span class="card-id">UTIL-01</span>
+            </div>
+            <h2>Graph Visualizer</h2>
+            <p>Data visualizer graph for plotting and analyzing signals.</p>
+        </a>
+
+        <!-- 2. Citation Generator -->
+        <a href="#" class="utility-card" data-tags="citation references bibtex apa mla">
+            <div class="card-header">
+                <span class="accent-dot amber"></span>
+                <span class="card-id">UTIL-02</span>
+            </div>
+            <h2>Citation Gen</h2>
+            <p>Automated citation generator for academic papers.</p>
+        </a>
+
+        <!-- 3. PDF Suite -->
+        <a href="#" class="utility-card" data-tags="pdf merge split sort remove pages">
+            <div class="card-header">
+                <span class="accent-dot coral"></span>
+                <span class="card-id">UTIL-03</span>
+            </div>
+            <h2>PDF Studio</h2>
+            <p>PDF merger, splitter, sorter, and remover tools.</p>
+        </a>
+
+        <!-- 4. Format Shifter -->
+        <a href="#" class="utility-card" data-tags="image to pdf convert">
+            <div class="card-header">
+                <span class="accent-dot cyan"></span>
+                <span class="card-id">UTIL-04</span>
+            </div>
+            <h2>Format Shifter</h2>
+            <p>Convert image to PDF and PDF to image.</p>
+        </a>
+
+        <!-- 5. Word Counter -->
+        <a href="#" class="utility-card" data-tags="text paragraph word counter characters">
+            <div class="card-header">
+                <span class="accent-dot amber"></span>
+                <span class="card-id">UTIL-05</span>
+            </div>
+            <h2>Text Analytics</h2>
+            <p>Paragraph word counter and text statistics.</p>
+        </a>
+
+        <!-- 6. Pagination -->
+        <a href="#" class="utility-card" data-tags="page number generator pdf document">
+            <div class="card-header">
+                <span class="accent-dot coral"></span>
+                <span class="card-id">UTIL-06</span>
+            </div>
+            <h2>Pagination</h2>
+            <p>Page number generator for compiled documents.</p>
+        </a>
+
+        <!-- 7. Image Editor -->
+        <a href="#" class="utility-card" data-tags="image resizer format converter cropper">
+            <div class="card-header">
+                <span class="accent-dot cyan"></span>
+                <span class="card-id">UTIL-07</span>
+            </div>
+            <h2>Image Processor</h2>
+            <p>Image resizer, format converter, and cropper.</p>
+        </a>
+
+        <!-- 8. Kanban Tracker -->
+        <a href="#" class="utility-card" data-tags="exam assignment tracker kanban board task">
+            <div class="card-header">
+                <span class="accent-dot amber"></span>
+                <span class="card-id">UTIL-08</span>
+            </div>
+            <h2>Task Kanban</h2>
+            <p>Exam and assignment tracker Kan-Ban style.</p>
+        </a>
+
+        <!-- 9. Info Log -->
+        <a href="#" class="utility-card" data-tags="info log course students database">
+            <div class="card-header">
+                <span class="accent-dot coral"></span>
+                <span class="card-id">UTIL-09</span>
+            </div>
+            <h2>Info Log</h2>
+            <p>Information log for courses and students.</p>
+        </a>
+
+        <!-- 10. Front Page Generator -->
+        <a href="./asset/Notes/FrontPageGenerator.txt" class="utility-card" data-tags="front cover page generator buet assignment">
+            <div class="card-header">
+                <span class="accent-dot cyan"></span>
+                <span class="card-id">UTIL-10</span>
+            </div>
+            <h2>Cover Page Gen</h2>
+            <p>Front page generator for BUET lab reports and assignments.</p>
+        </a>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

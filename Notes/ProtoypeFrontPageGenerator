@@ -1,0 +1,34 @@
+Front page generator Prototype
+
+1. University Logo
+2. University Name: Bangladesh University of Engineering and Technology
+3. Department Name: Department of __________ (combobox)
+
+4. Choose Level and Term: ___________ (combobox) [1-1, 1-2, 2-1, 2-2, 3-1, 3-2, 4-1, 4-2]
+
+5. Choose course code and name: _____________ (textbox)
+
+6. Type of File: (combobox)
+    a. Assignment
+    b. Lab Report
+    c. Custom _____ (textbox)
+
+7. Enter title:___________
+    a. Custom: (textbox)
+
+8. Submitted by:
+    
+    a. individual:(all textbox)
+        i. Name:_____
+        ii. Student ID:_______
+        iii. Section:________
+
+    b. group:________(text box)(type roll numbers separated by comma)(checkbox)
+
+9.  Submitted To: (add button)(checkbox)(all textbox)
+    a. Name:_____
+    b. Rank:_____
+    c. Department:_____
+
+10. Date of Performance: _______ (date picker)(checkbox)
+11. Date of Submission: _______ (date picker)(checkbox)

@@ -1,10 +1,6 @@
 Front page generator
 
-1. Choose Logo: __________ (combobox)
-    a. University Logo
-    b. Department Logo
-    c. University + Department Logo
-
+1. University Logo
 2. University Name: Bangladesh University of Engineering and Technology
 3. Department Name: Department of Biomedical Engineering
 
