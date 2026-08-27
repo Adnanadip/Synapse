@@ -1,0 +1,10 @@
+***1. Data Visualizer Graph
+2. Citation generator
+3. PDF Merger, Splitter, Sorter, Remover
+4. Image to PDF and PDF to Image
+5. Paragraph Word Counter
+6. Page Number generator
+7. Image resizer, format converter, cropper
+**8. Exam and Assignment Tracker Kan-Ban Style
+**9. Info Log for course, students
+***10. Front page generator
