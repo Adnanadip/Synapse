@@ -24,11 +24,7 @@ Front page generator Prototype
         iii. Section:________
 
     b. group:________(text box)(type roll numbers separated by comma)(checkbox)
+    
 
-9.  Submitted To: (add button)(checkbox)(all textbox)
-    a. Name:_____
-    b. Rank:_____
-    c. Department:_____
-
-10. Date of Performance: _______ (date picker)(checkbox)
-11. Date of Submission: _______ (date picker)(checkbox)
+10. Date of Performance: _______ (date picker)
+11. Date of Submission: _______ (date picker)

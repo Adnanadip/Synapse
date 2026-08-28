@@ -1,3 +1,5 @@
+/*AI Generated CSS for Synapse Home Page*/
+
 :root {
     /* Industrial Color Palette */
     --bg-app: #0E1012;
@@ -14,6 +16,7 @@
     --accent-cyan: #00D2EF;
     --accent-coral: #FF5C5C;
     --accent-amber: #FFC72C;
+    --accent-green: #00FF7F;
 
     /* Fonts */
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -163,6 +166,7 @@ body {
 .cyan { background-color: var(--accent-cyan); }
 .amber { background-color: var(--accent-amber); }
 .coral { background-color: var(--accent-coral); }
+.green { background-color: var(--accent-green); }
 
 .pulse {
     background-color: var(--accent-cyan);

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Synapse | Cover Page Generator</title>
+
+    <link rel="icon" type="image/svg+xml" href="./asset/logo/logo-icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="coverpage.css">
+
+</head>
+
+<body class="generator-body">
+
+    <nav class="top-nav">
+        <div class="brand">
+            <a href="./home.html" class="brand-link">
+                <img src="./asset/logo/logo-full.svg" alt="Synapse Logo" class="brand-logo">
+            </a>
+        </div>
+        <div class="nav-controls">
+            <a href="./home.html" class="back-link">&larr; Workspace</a>
+        </div>
+    </nav>
+
+    <header class="tool-header">
+        <span class="tool-id">Epinephrine-10</span>
+        <h1>Cover Page Gen</h1>
+        <p>Front page generator for BUET lab reports and assignments.</p>
+    </header>
+
+    <main class="generator-layout">
+
+        <section class="panel form-panel" aria-label="Cover page details">
+            <form id="coverForm" onsubmit="return false;">
+
+                <fieldset>
+                    <legend>Institution</legend>
+
+                    <div class="field">
+                        <label for="instituteSelect">Institution</label>
+                        <select id="instituteSelect">
+                            <option value="buet" selected>Bangladesh University of Engineering and Technology (BUET)</option>
+                            <option value="custom">Custom Institution</option>
+                        </select>
+                    </div>
+
+                    <div id="customInstituteBlock" class="hidden">
+                        <div class="field">
+                            <label for="customInstituteName">Institution Name</label>
+                            <input type="text" id="customInstituteName" placeholder="e.g. Your University Name">
+                        </div>
+                        <div class="field">
+                            <label for="customLogoUpload">Upload Logo (optional)</label>
+                            <input type="file" id="customLogoUpload" accept="image/*">
+                            <p class="hint">PNG/JPG/SVG. Leave empty to print without a logo.</p>
+                        </div>
+                    </div>
+                    <p id="logoWarning" class="hint warning hidden">Default BUET logo not found at <code>./asset/frontPage/buetLogo.jpg</code>. Check the file exists, or switch to a custom institution and upload your own.</p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Academic Details</legend>
+
+                    <div class="field">
+                        <label for="department">Department</label>
+                        <select id="department"></select>
+                    </div>
+                    <div id="customDepartmentBlock" class="field hidden">
+                        <label for="customDepartment">Custom Department</label>
+                        <input type="text" id="customDepartment" placeholder="e.g. Department of Robotics">
+                    </div>
+
+                    <div class="field">
+                        <label for="levelTerm">Level &amp; Term</label>
+                        <select id="levelTerm"></select>
+                    </div>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="courseCode">Course Code</label>
+                            <input type="text" id="courseCode" placeholder="e.g. BME204">
+                        </div>
+                        <div class="field">
+                            <label for="courseName">Course Name</label>
+                            <input type="text" id="courseName" placeholder="e.g. Physiology Sessional">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Document</legend>
+
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="fileType">Type of File</label>
+                            <select id="fileType">
+                                <option value="Assignment">Assignment</option>
+                                <option value="Lab Report" selected>Lab Report</option>
+                                <option value="Project Report">Project Report</option>
+                                <option value="Term Paper">Term Paper</option>
+                                <option value="Custom">Custom&hellip;</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="docNumber">Number <span class="hint-inline">(optional)</span></label>
+                            <input type="text" id="docNumber" placeholder="e.g. 1" value="1">
+                        </div>
+                    </div>
+                    <div id="customFileTypeBlock" class="field hidden">
+                        <label for="customFileType">Custom Document Type</label>
+                        <input type="text" id="customFileType" placeholder="e.g. Case Study">
+                    </div>
+
+                    <div class="field">
+                        <label for="titleLabel">Title Label</label>
+                        <select id="titleLabel">
+                            <option value="Experiment" selected>Experiment</option>
+                            <option value="Topic">Topic</option>
+                            <option value="Title">Title</option>
+                            <option value="Project Title">Project Title</option>
+                            <option value="Custom">Custom&hellip;</option>
+                        </select>
+                    </div>
+                    <div id="customTitleLabelBlock" class="field hidden">
+                        <label for="customTitleLabel">Custom Label</label>
+                        <input type="text" id="customTitleLabel" placeholder="e.g. Subject">
+                    </div>
+
+                    <div class="field">
+                        <label for="titleText">Title / Description</label>
+                        <textarea id="titleText" placeholder="e.g. STUDY OF PPG AND VARIATION OF PPG UNDER A VARIETY OF PHYSIOLOGICAL AND EXPERIMENTAL CONDITIONS"></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Submitted By</legend>
+
+                    <div class="field">
+                        <label for="studentName">Name</label>
+                        <input type="text" id="studentName" placeholder="e.g. Jodu Modu">
+                    </div>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="studentId">Student ID</label>
+                            <input type="text" id="studentId" placeholder="e.g. XXXXXXXX">
+                        </div>
+                        <div class="field">
+                            <label for="section">Section</label>
+                            <input type="text" id="section" placeholder="e.g. XXXX">
+                        </div>
+                    </div>
+
+                    <label class="checkbox-field">
+                        <input type="checkbox" id="isGroup">
+                        <span>This is a group submission</span>
+                    </label>
+
+                    <div id="groupBlock" class="hidden">
+                        <div class="field">
+                            <label for="groupRolls">Group Roll Numbers <span class="hint-inline">(comma separated)</span></label>
+                            <textarea id="groupRolls" placeholder="e.g. XXXXXXXX, YYYYYYYY, ZZZZZZZZ"></textarea>
+                        </div>
+                        <div class="field">
+                            <label for="rollsPerRow">Roll Numbers per Row</label>
+                            <input type="number" id="rollsPerRow" min="1" max="8" value="5">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dates</legend>
+                    <div class="field-row">
+                        <div class="field">
+                            <label for="datePerformance">Date of Performance</label>
+                            <input type="date" id="datePerformance">
+                        </div>
+                        <div class="field">
+                            <label for="dateSubmission">Date of Submission</label>
+                            <input type="date" id="dateSubmission">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Style</legend>
+
+                    <div class="field">
+                        <label>Accent Bar Colour</label>
+                        <div class="color-swatches" id="colorSwatches">
+                            <button type="button" class="swatch active" data-color="#a11f24" style="background:#a11f24" title="Classic Maroon"></button>
+                            <button type="button" class="swatch" data-color="#111111" style="background:#111111" title="Monochrome"></button>
+                            <button type="button" class="swatch" data-color="#1f3a5f" style="background:#1f3a5f" title="Navy"></button>
+                            <button type="button" class="swatch" data-color="#0f6e4f" style="background:#0f6e4f" title="Forest"></button>
+                            <button type="button" class="swatch" data-color="none" style="background:#ffffff;border:1px solid #555" title="None"></button>
+                        </div>
+                    </div>
+
+                    <label class="checkbox-field">
+                        <input type="checkbox" id="includeCredit">
+                        <span>Add a small "Generated with Synapse" footer credit</span>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>File</legend>
+                    <div class="field">
+                        <label for="fileName">Download File Name</label>
+                        <input type="text" id="fileName" placeholder="auto-generated from your details">
+                    </div>
+                </fieldset>
+
+            </form>
+        </section>
+
+        <!-- ============ PREVIEW PANEL ============ -->
+        <section class="panel preview-panel" aria-label="Live preview">
+
+            <div class="preview-toolbar">
+                <span class="preview-label">LIVE PREVIEW &middot; A4</span>
+                <div class="preview-actions">
+                    <button type="button" id="resetBtn" class="btn btn-ghost">Reset</button>
+                    <button type="button" id="printBtn" class="btn btn-ghost">Print / Save as PDF</button>
+                    <button type="button" id="generateBtn" class="btn btn-primary">Generate PDF</button>
+                </div>
+            </div>
+
+            <p id="overflowWarning" class="hint warning hidden">Your content is a little long for one page — Synapse has compacted the layout automatically to keep it single-page. Shorten the title for the most polished result.</p>
+
+            <div class="page-viewport" id="pageViewport">
+                <div class="page-scaler" id="pageScaler">
+                    <div class="page-frame" id="pageFrame"></div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-box">
+            <span class="dot pulse"></span>
+            <span id="loadingText">COMPILING DOCUMENT...</span>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="coverpage.js"></script>
+
+</body>
+
+</html>
