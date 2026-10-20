@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synapse | Data Visualizer</title>
+    <link rel="icon" type="image/svg+xml" href="../asset/logo/logo-icon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="brand"><a href="../index.html"><img src="../asset/logo/logo-full.svg" alt="Synapse Logo" class="brand-logo"></a></div>
+        <a href="../index.html" class="back-link">&larr; Workspace</a>
+    </nav>
+
+    <header class="workspace-header">
+        <h1>Dopamine-01</h1>
+        <p>Data Visualizer</p>
+        <div class="search-container"><input type="text" id="vizSearch" placeholder="Search charts.exe..." autocomplete="off"></div>
+        <div class="filters" id="filters"></div>
+    </header>
+
+    <main>
+        <div id="catalog"></div>
+    </main>
+
+    <script src="registry.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
