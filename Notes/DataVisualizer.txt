@@ -1,0 +1,52 @@
+tools list
+
+charts
+
+1. Scatter 
+2. Bubble
+3. Line charts 
+4. Multi axis charts
+5. Parallel Coordinates Plot
+6. pi chart or donut chart
+7. bar chart or column chars
+
+statistical distribution
+
+1. Box and Violin
+3. Histograms & Kernel Density Estimation (KDE)
+4. QQ Plots (Quantile-Quantile)
+
+biomedical and bioinformatics
+
+1. Volcano
+2. Kaplan-Meier Survival curves
+3. Manhattan Plots
+4. Sequence Logos
+
+Networks, Hierarchies & Flow
+
+1. Network Graphs
+2. Heatmaps with Dendrograms
+3. Sankey Diagrams
+4. Phylogenetic Trees
+
+dimmensionality reduction & textual 
+
+1. 2D / 3D PCA, t-SNE, and UMAP Plots
+2. Confusion Matrix Heatmaps
+3. Word Clouds & Frequency Trees
+4. Gantt Charts
+
+Controls
+
+
+interactive
+Zoom, Pan, Lasso
+Dynamic Threshold Sliders
+Color changing for chates
+custom axis and heading
+import data csv tsv xlsx json fasta biom h5ad as many as possible, drag and drop
+create tables and datasets in feild
+export svg, pdf, eps, png, jepg (dpi changable)
+
+
